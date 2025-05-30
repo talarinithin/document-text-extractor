@@ -24,7 +24,7 @@ Make sure you have installed and configured:
 - 📝 Tesseract OCR  
 - 📄 Poppler (for PDF processing)  
 
-_Add Tesseract and Poppler executables to your system PATH!_
+*Add Tesseract and Poppler executables to your system PATH!*
 
 ---
 
@@ -43,34 +43,40 @@ _Add Tesseract and Poppler executables to your system PATH!_
 Install dependencies:
 
 bash
-Copy code
+Copy
+Edit
 pip install flask flask-cors pytesseract pillow pdf2image
 Update paths in app.py:
 
 python
-Copy code
+Copy
+Edit
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 POPPLER_PATH = r'C:\Program Files\poppler\poppler-24.08.0\Library\bin'
 Run backend server:
 
 bash
-Copy code
+Copy
+Edit
 python app.py
 Frontend (React + Vite) ⚛️
 Navigate to frontend folder:
 
 bash
-Copy code
+Copy
+Edit
 cd frontend/my-react-app
 Install dependencies:
 
 bash
-Copy code
+Copy
+Edit
 npm install
 Run frontend dev server:
 
 bash
-Copy code
+Copy
+Edit
 npm run dev
 🎉 Usage
 Open your browser at http://localhost:5173
@@ -84,44 +90,36 @@ Click Extract Text to extract text from file
 View extracted text below
 
 🐙 How to Push to GitHub (Step by Step)
-Create a new GitHub repository:
-
-Go to GitHub
-
-Click New repository
-
-Name it e.g. document-text-extractor
-
-Choose Public or Private
-
-Click Create repository
+Create a new GitHub repository
 
 Initialize local git repo (if not already):
 
 bash
-Copy code
+Copy
+Edit
 cd your-project-folder
 git init
 Add remote origin:
 
 bash
-Copy code
+Copy
+Edit
 git remote add origin https://github.com/talarinithin/document-text-extractor.git
 Add all files and commit:
 
 bash
-Copy code
+Copy
+Edit
 git add .
 git commit -m "Initial commit: Add frontend & backend code"
 Push to GitHub:
 
 bash
-Copy code
+Copy
+Edit
 git branch -M main
 git push -u origin main
-🎉 Your project is now on GitHub!
-
 ❤️ Thank you for using Document Text Extractor!
-If you found this helpful, feel free to ⭐️ the repo on GitHub!
+If you found this helpful, please ⭐️ the repo on GitHub!
 
 Made with ❤️ by Talari Nithin
